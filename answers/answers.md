@@ -1,4 +1,4 @@
-CÂU A1:
+BÀI A1:
     1.
         Khi ta mở chrome và gõ https://shopee.vn sau đó nhấn phím enter.
             1.Request xuất phát từ máy tính cá nhân -> đi qua router wifi  
@@ -14,7 +14,7 @@ CÂU A1:
         Tổng thời gian load trang: 1.46 giây
         ![alt text](screenshot/image-2.png)
         Request trả về file CSS trong đó : status code: 200 (Thành công và trả về kết quả), thời gian thực hiện của request: 73ms
-CÂU A2:
+BÀI A2:
     +Tại sao trang web bị Google đánh giá SEO thấp?
         Vì đoạn code sử dụng thẻ <div> cho mọi thứ thay vì semantic tags.
         -> Google không thể hiểu cấu trúc trang -> xếp hạng thấp trong kết quả tìm kiếm
@@ -51,7 +51,7 @@ CÂU A2:
              <p>&copy; 2026 ShopTLU</p>
         </footer>
 
-CÂU A3:
+BÀI A3:
     ![alt text](screenshot/text_art.jpg)
 
     Giải thich:
@@ -59,7 +59,7 @@ CÂU A3:
     - <span>: Chỉ chiếm phần nội dung,nằm cùng dòng với nhau
     - <strong> : Chỉ chiếm phần nội dung,nằm cùng dòng với nhau,in đậm để nhấn mạnh nội dung
 
-CÂU B3: PHẦN B-THỰC HÀNH CODE
+BÀI B3: PHẦN B-THỰC HÀNH CODE
     Lỗi 1: Dòng 136 — <!DOCTYPE> không đầy đủ
        Cách sửa: <!DOCTYPE html>
 
@@ -108,3 +108,9 @@ CÂU B3: PHẦN B-THỰC HÀNH CODE
 
     Lỗi 11: Dòng 180 — <p> trong <footer> không đóng tag
             Cách sửa: <p>Copyright 2026</p>
+
+BÀI B4: PHÂN TÍCH TRANG WEB THẬT - PHẦN B: THỰC HÀNH CODE
+    1. 3 thẻ semantic HTML5 mà trang đã sử dụng:
+        
+        - thẻ <header>: vị trí thẻ: ở trên cùng của trang
+        - thẻ <>
