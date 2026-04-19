@@ -59,4 +59,52 @@ CÂU A3:
     - <span>: Chỉ chiếm phần nội dung,nằm cùng dòng với nhau
     - <strong> : Chỉ chiếm phần nội dung,nằm cùng dòng với nhau,in đậm để nhấn mạnh nội dung
 
+CÂU B3: PHẦN B-THỰC HÀNH CODE
+    Lỗi 1: Dòng 136 — <!DOCTYPE> không đầy đủ
+       Cách sửa: <!DOCTYPE html>
 
+    Lỗi 2: Dòng 137 — <html> thiếu lang="vi"
+        Cách sửa: <html lang="vi">
+
+    Lỗi 3: Dòng 139 — <title> thiếu thẻ đóng
+        Cách sửa: <title>Trang web</title>
+
+    Lỗi 4: Dòng 140 — charset viết sai (utf8 -> UTF-8)
+        Cách sửa: <meta charset="UTF-8">
+
+    Lỗi 5: Dòng 143 — <h1> đóng tag sai 
+        Cách sửa: <h1>Welcome to ShopTLU</h1>
+
+    Lỗi 6: Dòng 147 — <a> thiếu thẻ đóng  
+        Cách sửa: <a href="home">Trang chủ</a>
+
+    Lỗi 7: Dòng 155 — <img> không có dấu ngoặc kép quanh src
+        Cách sửa: <img src="iphone.jpg">
+
+    Lỗi 8: Dòng 157 — <b> và </p> bị nhầm vị trí 
+        Cách sửa: <p>Giá: <b>25.990.000đ</b></p>
+
+    Lỗi 9: Dòng 162-171 — <table> thiếu <thead>, <tbody>
+        Cách sửa:  <table>
+                        <thead>
+                            <tr>
+                                <td>Tên</td>
+                                <td>Giá</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>iPhone</td>
+                                <td>25tr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+    Lỗi 10: Dòng 175 — Có 2 thẻ <main> 
+            Cách sửa:   <aside>
+                            <p>Sidebar content</p>
+                        </aside>
+
+    Lỗi 11: Dòng 180 — <p> trong <footer> không đóng tag
+            Cách sửa: <p>Copyright 2026</p>
