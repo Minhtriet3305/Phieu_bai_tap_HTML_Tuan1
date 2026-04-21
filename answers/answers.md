@@ -329,5 +329,14 @@ BÀI C1: THIẾT KẾ KIẾN TRÚC - PHẦN C: SUY LUẬN
 </body>
 </html>
 
+CÂU C2 - SO SÁNH VÀ TRANH LUẬN - PHẦN C: PHẢN BIỆN
+ Tôi không đồng ý với quan điểm trên.Mặc dù dùng thẻ <div> có thể sẽ nhanh hơn so với thẻ semantic.Nhưng xét về lợi ích thì <div> mang lại lợi ích kém hơn so với dùng thẻ semantic.
 
-<>
+ 1. Lý do kỹ thuật: SEO
+    Google không chỉ đọc nội dung trong trang mà còn phân tích cấu trúc của trang web.Khi bạn dùng <div> cho header thì Google sẽ không biết đó là phần đầu trang.Nếu dùng thẻ semantic như: <header>, <nav>, <article>,... có thể giúp Google hiểu rõ hơn về cấu trúc trang cùng với đó trang sẽ được đẩy lên đầu.
+    - Ví dụ: Khi ta dùng công cụ dev tool để so sánh giữa trang web sử dụng thẻ <div> và trang sử dụng các thẻ semantic sẽ thấy trang sử dụng các thẻ semantic sẽ được đẩy lên đầu trang.
+2. Lý do kỹ thuật: Accessibility
+    Người dùng khuyết tật dùng screen reader (công cụ đọc trang web) để duyệt internet. Khi gặp <nav>, screen reader sẽ thông báo "Điều hướng", giúp người dùng nhảy trực tiếp đến phần menu thay vì phải nghe toàn bộ trang. Nếu dùng <div class="nav">, screen reader chỉ đọc là "div", người dùng sẽ lúng túng.
+
+3. Trường hợp thực tế mà thẻ <div> vẫn phù hợp
+    -Dùng gom nhóm để căn chỉnh CSS cho các bố cục trong trang web
