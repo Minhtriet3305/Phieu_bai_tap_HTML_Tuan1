@@ -414,5 +414,8 @@ CÂU A4:
             + Biểu đồ doanh thu Q1/2026: alt="Q1 2026 Doanh thu: Tháng 1: 100 triệu, Tháng 2: 180 triệu, Tháng 3: 360 triệu"
  
 CÂU A5:
-
+    - Khi nào sử dụng cách 1: Dùng cách này khi hình ảnh chỉ đóng vai trò trang trí như logo hay ảnh bìa mà không cần chú thích.
+    Ví dụ: Avartar người dùng,ảnh bìa trang web.
+    - Khi nào sử dụng cách 2: Dùng cách này khi hỉnh ảnh đóng vai trò là 1 phần nội dung chính và có chú thích.
+    Ví dụ: Ảnh sản phẩm trong thông tin mô tả của các trang TMĐT,Biểu đồ báo cáo.
 
