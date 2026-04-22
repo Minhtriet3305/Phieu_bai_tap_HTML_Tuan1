@@ -396,10 +396,23 @@ CÂU A3:
     3. aria-label có thể được dùng nếu như ta không sử dụng thẻ <label> cho <input>.Nếu như ta đã có thẻ <label> mà dùng tiếp aria-label thì sẽ bị thừa.
 
 CÂU A4:
-    - Thuộc tính loading="lazy" trong thẻ <img> giúp cho ảnh chỉ hiển thị khi lướt đến.Nó giúp cải thiện tốc độ load trang, nếu người dùng không lướt đến khu vực đấy thì trang sẽ không hiện ảnh giúp tiết kiệm data.
-    - Khi nào không nên dùng:
-        + Nếu người dùng muốn thấy ảnh ngay không phải lướt đến mới thấy.
-        + Các logo,ảnh bìa đây là những ảnh cần hiển thị ngay
+    1. Thuộc tính loading="lazy" trong thẻ <img> giúp cho ảnh chỉ hiển thị khi lướt đến.Nó giúp cải thiện tốc độ load trang, nếu người dùng không lướt đến khu vực đấy thì trang sẽ không hiện ảnh giúp tiết kiệm data.
+        - Khi nào không nên dùng:
+            + Nếu người dùng muốn thấy ảnh ngay không phải lướt đến mới thấy.
+            + Các logo,ảnh bìa đây là những ảnh cần hiển thị ngay
+    2. Tại sao nên cấp nhiều <source> cho thẻ <video>.
+        -Ở một số trình duyệt như Google,Firefox,... có thể hỗ trợ được nhiều loại video nhưng không phải trình duyệt nào cũng hỗ trợ hết 100% như Google có hỗ trợ MP4,WebM nhưng Firefox chỉ hỗ trợ WebM,Ogg chứ không hỗ trợ MP4 nếu như không có thẻ <source> để lựa chọn phương án thì sẽ không xem được video.
+       Một số format phổ biến:
+        + MP4: Phổ biến nhất, hỗ trợ tốt trên hầu hết trình duyệt và thiết bị.
+        + WebM : Định dạng mã nguồn mở, tối ưu cho web.
+        + Ogg: Định dạng mã nguồn mở, ít phổ biến nhưng vẫn được một số trình duyệt hỗ trợ.
+    3.
+        Thuộc tính alt dùng để thay thế ảnh không thể hiển thị bằng dòng text cho biết ảnh đấy là gì.
+        - thuộc tính alt cho các trường hợp:
+            + Iphone 16: alt="iPhone 16 Pro Max 256GB Titanium Gray"
+            + Decorative: alt="" 
+            + Biểu đồ doanh thu Q1/2026: alt="Q1 2026 Doanh thu: Tháng 1: 100 triệu, Tháng 2: 180 triệu, Tháng 3: 360 triệu"
  
+CÂU A5:
 
 
