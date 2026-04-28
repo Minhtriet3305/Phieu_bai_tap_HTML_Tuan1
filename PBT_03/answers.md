@@ -1,0 +1,103 @@
+CÂU A1:
+    + 3 cách nhúng CSS vào HTML:
+        - Cách 1: Inline CSS: Thêm thuộc tính style vào thẻ muốn điều chỉnh
+        VD: <h1 style="color: #2563eb; font-size: 32px;">Tiêu đề</h1>
+        Ưu điểm: Nhanh, đơn giản, phù hợp để test nhanh giao diện
+        Nhược điểm: Khó tái sử dung, khó bảo trì
+        Khi nào nên dùng: Khi test thử giao diện, hoặc các phần tử không cần tái sử dụng
+        - Cách 2: Internal CSS: Viết bên trong thẻ style trong file HTML (thường viết trong phần head)
+        VD: <head>
+                <style>
+                    p {
+                        color: blue;
+                        font-size: 18px;
+                    }
+                </style>
+            </head>
+        Ưu điểm: Dễ quản lý, áp dụng được cho nhiều phần tử cùng lúc
+        Nhược điểm: Làm cho file HTML dài hơn, khó tái sử dụng cho nhiều trang
+        Khi nào nên dùng: Website chỉ có 1 trang, các demo
+        - Cách 3: External CSS: Viết CSS trong 1 file riêng và liên kết với trang HTML qua thẻ link
+        VD: *file style.css
+            p {
+                color: blue;
+                font-size: 18px;
+            }
+            *file index.html
+            <head>
+                <link rel="stylesheet" href="style.css">
+            </head>
+        Ưu điểm: Chuyên nghiệp nhất, dễ bảo trì, tái sử dụng cho nhiều trang
+        Nhược điểm: Nếu liên kết sai thì file sẽ không chạy CSS
+        Khi nào nên dùng: Dự án thực tế, làm việc nhóm,Website lớn
+        
+        - Trả lời câu hỏi thêm: Nếu cả 3 cách CSS đồng thời áp dụng thì cái viết sau cùng sẽ thắng. Vì trình duyệt sẽ xét theo độ ưu tiên: Inline > Internal > External, nếu các khai báo cùng mức ưu tiên thì thuộc tính được viết sau cùng sẽ thắng.
+
+CÂU A2:
+    1. h1: Chọn thẻ h1
+    ![alt text](screenshots/Selector1.PNG)
+    ![alt text](screenshots/Selector_HTML.png)
+    ![alt text](screenshots/Selector_CSS.png)
+    2. .price: Chọn các class là price
+    ![alt text](screenshots/Selector2.png)
+    ![alt text](screenshots/Selector_CSS2.png)
+    ![alt text](screenshots/Selector_HTML2.png)
+    3. #app header: Chọn các header có trong phần tử có id là app
+    ![alt text](screenshots/Selector3.png)
+    ![alt text](screenshots/Selector_HTML3.png)
+    ![alt text](screenshots/Selector2_CSS3.png)
+    4. nav a:first-child : Chọn phần tử con thẻ a đầu tiên trong thẻ nav
+    ![alt text](screenshots/Selector4.png)
+    ![alt text](screenshots/Selector_HTML4.png)
+    ![alt text](screenshots/Selector_CSS4.png)
+    5. .product.featured h2 : Chọn các thẻ h2 trong phần tử có class là product và featured
+    ![alt text](screenshots/Selector5.png)
+    ![alt text](screenshots/Selector_HTML5.png)
+    ![alt text](screenshots/Selector_CSS5.png)
+    6. article > p: chọn tất cả các thẻ p trong thẻ article
+    ![alt text](screenshots/Selector6.png)
+    ![alt text](screenshots/Selector_HTML6.png)
+    ![alt text](screenshots/Selector_CSS6.png)
+    7. a[href="/"] : chọn tất cả thẻ a có thuộc tính href="/"
+    ![alt text](screenshots/Selector7.png)
+    ![alt text](screenshots/Selector_HTML7.png)
+    ![alt text](screenshots/Selector_CSS7.png)
+    8..top-bar.dark h1: chọn thẻ h1 trong phần tử chứa class top-bar và dark
+    ![alt text](screenshots/Selector8.png)
+    ![alt text](screenshots/Selector_HTML8.png)
+    ![alt text](screenshots/Selector_CSS8.png)
+
+CÂU A3:
+    Trường hợp 1:
+        Chiều rộng hiển thị: 400 + 20 * 2 + 5 * 2= 450px
+        Không giam chiếm trên trang: 450 + 10 *2 = 470px
+    Trường hợp 2:
+        Chiều rộng hiển thị : 400px
+        Kích thước content thực tế: 400 - 20 * 2 - 5 * 2 = 350px
+        Không gian chiếm trên trang 400 + 10 * 2 = 420px
+    Trường hợp 3: 
+        Khoảng cách giữa box-a và box-b: 40px
+        Tại sao không phải 65px: Vì 2 block element nằm dọc thì margin dọc giữa 2 block element sẽ bị gộp lại và lấy giá trị lớn nhất.
+    
+    Trả lời câu hỏi nâng cao: 
+        Khoảng cách giữa .box-a có margin-bottom: -10px và .box-b có margin-top: 40px là:
+            40 + (-10) = 30px
+CÂU A4:
+1.
+    Theo thứ tự ưu tiên: id->class->tag
+    Rule A: 001 -> tổng = 1
+    Rule B: 010 -> tổng = 10
+    Rule C: 100 -> tổng = 100
+    Rule D: 011 -> tổng = 11
+2.
+    Element sẽ có màu đỏ. Vì trình duyệt sẽ so sánh điểm thì sẽ thấy rule C có điểm cao nhất do đó nó thắng tuyệt đối mà không cần xét đến các cái còn lại
+3. 
+    Nếu thêm <p class="price" id="main-price" style="color: orange;"> thì element sẽ có màu cam 
+4.
+    Nếu Rule A thêm !important thì element sẽ có màu đen vì khi thêm !important thì trình duyệt sẽ cho ưu tiên tuyệt đối.
+    
+
+    
+
+
+  
