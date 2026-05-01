@@ -133,6 +133,21 @@ CÂU B2:
     4. 
         Nếu thay đổi thứ tự rules trong CSS file. Kết quả không thay đổi. Vì Specificity score quan trọng hơn thứ tự xuất hiện vì rule số 10 có điểm cao nhất nên kể cả có đặt ở bất kỳ đâu thì trình duyệt vẫn chọn nó để áp dụng màu.
     
+PHẦN C : DEBUG & SUY LUẬN
+CÂU C1:
+    1.
+        Chiều rộng thực tế của sidebar:
+        300 + 20 * 2 + 1 * 2 = 342px
+        Chiều rộng thực tế của content:
+        660 + 30 * 2 + 1 * 2 = 722px
+    2.
+        vì tổng chiều rộng của container chỉ có 960px trong khi đó chiều rộng thực tế khi thêm sidebar và content mà không dùng border-box là 342 + 722 = 1064px => nên không đủ chỗ cho sidebar và content nằm cạnh nhau
+    3.
+        Cách 1: Thêm box-sizing: border-box : chiều rộng của sidebar và content sẽ co lại và khớp với chiều rộng của container
+        Cách 2: Tính toán lại width thủ công : 
+            + sidebar: 300 - 20 * 2 - 1 * 2 = 258px
+            + content: 660 - 30 * 2 - 1 * 2 = 598px
+
 
     
 
