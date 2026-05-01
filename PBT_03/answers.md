@@ -98,13 +98,35 @@ CÂU A4:
 
 PHẦN B: THỰC HÀNH CODE
 CÂU B2:
-    Hộp 1 (content-box): chiều rộng thực tế = 349.6 px 
-    ![alt text](screenshots/box_model.png)
-    Hộp 2 (border-box): chiều rộng thực tế = 300 px 
-    ![alt text](screenshots/box_model2.png)
-    Giải thích sự khác biệt: 
-    - Ở hộp 1 ta được chiều rộng thực tế là 349.6px trong khi chúng ta cho chiều rộng chỉ khoảng 300 đấy là vì với content-box mặc định thì chiều rộng chỉ áp dụng khu vực nội dung còn padding và border bị phình to ra nên t thấy được chiều rộng thực tế thay vì chỉ 300 thì nó cộng tiếp với padding và border.
-    - Ở hộp 2 ta được chiều rộng thực tế là 300px vừa đúng với chiều rộng đã khai báo ban đầu đấy là vì với border-box thì padding và border sẽ co vào trong thay vì phình to ra 
+    Phần 1: 
+        Hộp 1 (content-box): chiều rộng thực tế = 349.6 px 
+        ![alt text](screenshots/box_model.png)
+        Hộp 2 (border-box): chiều rộng thực tế = 300 px 
+        ![alt text](screenshots/box_model2.png)
+        Giải thích sự khác biệt: 
+        - Ở hộp 1 ta được chiều rộng thực tế là 349.6px trong khi chúng ta cho chiều rộng chỉ khoảng 300 đấy là vì với content-box mặc định thì chiều rộng chỉ áp dụng khu vực nội dung còn padding và border bị phình to ra nên t thấy được chiều rộng thực tế thay vì chỉ 300 thì nó cộng tiếp với padding và border.
+        - Ở hộp 2 ta được chiều rộng thực tế là 300px vừa đúng với chiều rộng đã khai báo ban đầu đấy là vì với border-box thì padding và border sẽ co vào trong thay vì phình to ra
+    Phần 2:
+        Trường hợp 1: > 1000px
+            vì không sử dụng border-box nên trình duyệt sẽ tính toán như sau:
+            cột 1: 250 + 15*2 = 280px
+            cột 2: 500 + 20*2 = 540px
+            cột 3: 250 + 15*2 = 280px
+            => 280 + 540 + 280 = 1100px
+            ![alt text](screenshots/threecolumn_case1(1).png)
+            ![alt text](screenshots/threecolumn_case1(2).png)
+            ![alt text](screenshots/threecolumn_case1(3).png)
+            nhưng vì ở class container đã sử dụng display:flex thế nên trình duyệt sẽ ép các cột nhỏ lại để vừa 1000px
+        Trường hợp 2: dùng border-box
+             ![alt text](screenshots/threecolumn_case2(1).png)
+             cột 1 chiều rộng ta thấy vẫn bằng 250px
+             ![alt text](screenshots/threecolumn_case2(2).png)
+             cột 2 chiều rộng ta thấy vẫn bằng 500px
+             ![alt text](screenshots/threecolumn_case2(3).png)
+             cột 3 chiều rộng ta thấy vẫn bằng 250px
+             => 250 + 500 + 250 = 1000px
+ CÂU B3:
+    
 
     
 

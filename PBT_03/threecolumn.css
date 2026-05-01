@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+}
+
+.container .column1{
+    width: 250px;
+    background-color: lightblue;
+    padding: 15px;
+
+}
+
+.container .column2{
+    width: 500px;
+    padding: 20px;
+}
+
+.container .column3{
+    width: 250px;
+    background-color: lightblue;
+    padding: 15px;
+}
